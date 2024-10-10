@@ -53,10 +53,13 @@ class SigninScreen extends StatelessWidget {
                   ],
                 ),
               )),
+              //==============================forget button here=====================>
           Align(
             alignment: Alignment.topRight,
             child: TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  Get.toNamed(AppRoute.jdkfjk);
+                },
                 child: Text(
                   AppString.forget,
                   style: TextStyle(
@@ -72,6 +75,7 @@ class SigninScreen extends StatelessWidget {
           const SizedBox(
             height: 10,
           ),
+          //=============================================================sign in button===============here
           InkWell(
             onTap: (){
               Get.toNamed(AppRoute.bottomNavBar);

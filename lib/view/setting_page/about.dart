@@ -8,13 +8,13 @@ class AboutScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: PreferredSize(
-        preferredSize: Size.fromHeight(100),
+        preferredSize: const Size.fromHeight(100),
         child: AppBar(
           automaticallyImplyLeading: false,
-          flexibleSpace: CustomAppber(title: "About"),
+          flexibleSpace: const CustomAppber(title: "About"),
         ),
       ),
-      body: Padding(
+      body: const Padding(
         padding:  EdgeInsets.symmetric(horizontal: 10),
         child: Text(
           textAlign: TextAlign.justify,

@@ -1,5 +1,8 @@
 
 import 'package:get/get.dart';
+import 'package:vedio_call/view/auth_screen/forget_pass_screen.dart';
+import 'package:vedio_call/view/auth_screen/get_otp_screen.dart';
+import 'package:vedio_call/view/auth_screen/reset_pass_screen.dart';
 import 'package:vedio_call/view/auth_screen/signin_screen.dart';
 import 'package:vedio_call/view/auth_screen/signup_screen.dart';
 import 'package:vedio_call/view/bottom_nav_bar.dart';
@@ -16,6 +19,10 @@ class AppRoute {
   static const settingsPage = "/settingsPage";
   static const pricacyPolicy = "/privacyPolicy";
   static const aboutPage = "/aboutPage";
+  static const forgetPassScreen = "/forgetPassScreen";
+  static const getOtpScreen = "/getOtpScreen";
+  static const resetPassScreen = "/resetPassScreen";
+  static const jdkfjk = "/jdkfjk";
   static List<GetPage> pages = [
     GetPage(name: signinScreen, page: ()=> SigninScreen()),
     GetPage(name: signUpScreen, page: ()=> SignupScreen()),
@@ -24,6 +31,10 @@ class AppRoute {
     GetPage(name: settingsPage, page: ()=> const SettingsPage()),
     GetPage(name: pricacyPolicy, page: ()=> const PrivacyPolicy()),
     GetPage(name: aboutPage, page: ()=> const AboutScreen()),
+    // GetPage(name: forgetPassScreen, page: ()=> const ForgetPassScreen()),
+    GetPage(name: getOtpScreen, page: ()=> const GetOtpScreen()),
+    GetPage(name: resetPassScreen, page: ()=> const ResetPassScreen()),
+    GetPage(name: jdkfjk, page: ()=>  BlurBackground()),
   ];
 
 }
