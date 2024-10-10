@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+// ignore: must_be_immutable
 class ProfileItem extends StatelessWidget {
    ProfileItem({
     super.key,
@@ -58,7 +59,7 @@ class ProfileItem extends StatelessWidget {
                     )
                   : Column(
                       children: [
-                        SizedBox(height: 20,),
+                        const SizedBox(height: 20,),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
@@ -86,7 +87,7 @@ class ProfileItem extends StatelessWidget {
                         ),
                         TextFormField(
                           controller: bioController,
-                          decoration: InputDecoration(
+                          decoration: const InputDecoration(
                             border: InputBorder.none
                           ),
                         )

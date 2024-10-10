@@ -8,6 +8,7 @@ import 'package:vedio_call/utils/image.dart';
 import 'package:vedio_call/view/auth_screen/controller/auth_controller.dart';
 import 'package:vedio_call/widgets/custom_text_field.dart';
 
+// ignore: must_be_immutable
 class SignupScreen extends StatelessWidget {
   SignupScreen({super.key});
   AuthController authController = Get.find<AuthController>();

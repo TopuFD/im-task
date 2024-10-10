@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class CustomListtile extends StatelessWidget {
    CustomListtile({super.key,this.iconData,this.title,this.image});
 
@@ -9,7 +10,7 @@ class CustomListtile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(bottom: 10),
+      margin: const EdgeInsets.only(bottom: 10),
       height: 100,
       decoration: BoxDecoration(
         border: Border.all(

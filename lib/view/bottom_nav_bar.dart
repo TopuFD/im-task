@@ -38,24 +38,24 @@ class _BottomNavBarState extends State<BottomNavBar> {
               navIndex = currentIndex;
             });
           },
-          items: [
-            const BottomNavigationBarItem(
+          items: const [
+            BottomNavigationBarItem(
                 icon: Icon(
                   Icons.home,
                 ),
                 label: "Home",
                 backgroundColor: Colors.black),
-            const BottomNavigationBarItem(
+            BottomNavigationBarItem(
                 icon: Icon(
                   Icons.grade_sharp,
                 ),
                 label: "Grades"),
-            const BottomNavigationBarItem(
+            BottomNavigationBarItem(
                 icon: Icon(
                   Icons.schedule,
                 ),
                 label: "Schedule"),
-            const BottomNavigationBarItem(
+            BottomNavigationBarItem(
                 icon: Icon(
                   Icons.person,
                 ),

@@ -1,6 +1,5 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:vedio_call/core/app_route.dart';
 import 'package:vedio_call/utils/app_string.dart';
@@ -9,6 +8,7 @@ import 'package:vedio_call/utils/image.dart';
 import 'package:vedio_call/view/auth_screen/controller/auth_controller.dart';
 import 'package:vedio_call/widgets/custom_text_field.dart';
 
+// ignore: must_be_immutable
 class SigninScreen extends StatelessWidget {
   SigninScreen({super.key});
   AuthController authController = Get.find<AuthController>();

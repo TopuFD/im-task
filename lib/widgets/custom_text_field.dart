@@ -75,7 +75,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
     return Material(
       color: Colors.transparent,
       child: Container(
-        padding: EdgeInsets.all(0),
+        padding: const EdgeInsets.all(0),
         child: TextFormField(
           onTap: () {
             widget.onTapClick();

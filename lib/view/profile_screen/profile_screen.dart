@@ -140,12 +140,12 @@ class ProfileScreen extends StatelessWidget {
                   ProfileItem(
                     title: "Mobile : +8801234-567890",
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   //=======================================================bio information here==============
-                  Padding(
-                    padding: const EdgeInsets.only(left: 10),
+                  const Padding(
+                    padding: EdgeInsets.only(left: 10),
                     child: Align(
                       alignment: Alignment.topLeft,
                       child: Text(
@@ -160,7 +160,7 @@ class ProfileScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   ProfileItem(

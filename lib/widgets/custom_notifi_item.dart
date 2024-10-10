@@ -7,8 +7,8 @@ class CustomNotifiItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(vertical: 10),
-      padding: EdgeInsets.all(5),
+      margin: const EdgeInsets.symmetric(vertical: 10),
+      padding: const EdgeInsets.all(5),
       width: 344,
       height: 100,
       decoration: BoxDecoration(
@@ -27,7 +27,7 @@ class CustomNotifiItem extends StatelessWidget {
               Text(
                 title!,
                 textAlign: TextAlign.center,
-                style: TextStyle(
+                style: const TextStyle(
                   color: Color(0xFF383838),
                   fontSize: 14,
                   fontFamily: 'Poppins',
@@ -35,12 +35,12 @@ class CustomNotifiItem extends StatelessWidget {
                   height: 0.14,
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               Text(
                 subtitle!,
-                style: TextStyle(
+                style: const TextStyle(
                   color: Color(0xFF383838),
                   fontSize: 14,
                   fontFamily: 'Poppins',
@@ -50,7 +50,7 @@ class CustomNotifiItem extends StatelessWidget {
               ),
             ],
           ),
-          Icon(Icons.keyboard_arrow_right)
+          const Icon(Icons.keyboard_arrow_right)
         ],
       ),
     );

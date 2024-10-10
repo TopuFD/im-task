@@ -18,7 +18,7 @@ class SettingItem extends StatefulWidget {
 
 class _SettingItemState extends State<SettingItem> {
   bool switchValue = false;
-  bool isEnglish = false;
+  bool isEnglish = true;
   bool isBangla = false;
 
   @override
@@ -28,6 +28,7 @@ class _SettingItemState extends State<SettingItem> {
       child: Stack(
         alignment: Alignment.center,
         children: [
+          //=====================================top item here===================>
           Container(
             width: Get.width,
             height: 60,
@@ -77,6 +78,7 @@ class _SettingItemState extends State<SettingItem> {
                   ),
                 if (!widget.isSwitch && widget.isIcon)
                   const Icon(Icons.keyboard_arrow_right, color: Colors.black),
+                  //=========================================change language logic=================>
                 if (!widget.isSwitch && !widget.isIcon)
                   Container(
                     height: 40,

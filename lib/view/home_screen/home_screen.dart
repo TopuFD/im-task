@@ -269,7 +269,7 @@ class HomeScreen extends StatelessWidget {
     showDialog(
       context: context,
       builder: (BuildContext context) {
-        return SlideDialog();
+        return const SlideDialog();
       },
     );
   }
@@ -277,7 +277,10 @@ class HomeScreen extends StatelessWidget {
 
 //==========================================dialog animation class here===============================
 class SlideDialog extends StatefulWidget {
+  const SlideDialog({super.key});
+
   @override
+  // ignore: library_private_types_in_public_api
   _SlideDialogState createState() => _SlideDialogState();
 }
 

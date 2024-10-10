@@ -26,7 +26,7 @@ class CustomBodyBtn extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
           icon!,
-          SizedBox(width: 4,),
+          const SizedBox(width: 4,),
           Text(
           title,
           style: const TextStyle(

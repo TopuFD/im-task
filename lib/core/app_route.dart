@@ -15,9 +15,9 @@ class AppRoute {
   static List<GetPage> pages = [
     GetPage(name: signinScreen, page: ()=> SigninScreen()),
     GetPage(name: signUpScreen, page: ()=> SignupScreen()),
-    GetPage(name: bottomNavBar, page: ()=> BottomNavBar()),
+    GetPage(name: bottomNavBar, page: ()=> const BottomNavBar()),
     GetPage(name: homeScreen, page: ()=> HomeScreen()),
-    GetPage(name: settingsPage, page: ()=> SettingsPage()),
+    GetPage(name: settingsPage, page: ()=> const SettingsPage()),
   ];
 
 }
