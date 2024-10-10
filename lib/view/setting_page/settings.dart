@@ -24,85 +24,101 @@ class SettingsPage extends StatelessWidget {
           const SizedBox(
             height: 20,
           ),
-          const SettingItem(
+          SettingItem(
             title: "Dark Mode",
             isSwitch: true,
           ),
           const SizedBox(
             height: 20,
           ),
-          const SettingItem(
+          SettingItem(
+            ontap: (){
+              Get.toNamed(AppRoute.pricacyPolicy);
+            },
             title: "Privacy & Security",
             isIcon: true,
           ),
           const SizedBox(
             height: 20,
           ),
-          const SettingItem(
+          SettingItem(
             title: "Show All Notification",
             isSwitch: true,
           ),
           const SizedBox(
             height: 20,
           ),
-          const SettingItem(
+          SettingItem(
+            ontap: () {
+              Get.toNamed(AppRoute.aboutPage);
+            },
             title: "about",
             isIcon: true,
           ),
           const SizedBox(
             height: 20,
           ),
-          const SettingItem(
+          SettingItem(
             title: "language",
           ),
           const SizedBox(
             height: 20,
           ),
-          InkWell(
-              onTap: () {
-                Get.defaultDialog(
-                  title: "Log Out",
-                  content: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: [
-                      InkWell(
-                        onTap: () {
-                          Get.offAllNamed(AppRoute.signinScreen);
-                        },
-                        child: Container(
-                          height: 36,
-                          width: 92,
-                          decoration: BoxDecoration(
-                            color: Colors.black,
-                            borderRadius: BorderRadius.circular(5)
-                          ),
-                          child: const Center(child: Text("Yes",style: TextStyle(color: Colors.white),)),
-                        ),
-                      ),
-                      InkWell(
-                        onTap: () {
-                          Get.back();
-                        },
-                        child: Container(
-                          height: 36,
-                          width: 92,
-                          decoration: BoxDecoration(
-                            color: Colors.black,
-                            borderRadius: BorderRadius.circular(5)
-                          ),
-                          child: const Center(child: Text("No",style: TextStyle(color: Colors.white),),),
-                        ),
-                      ),
-                    ],
-                  )
-                );
-              },
-              child: const SettingItem(
-                title: "Log Out",
-                isIcon: true,
-              )),
+          SettingItem(
+            ontap: () {
+              logoutDialog();
+            },
+            title: "Log Out",
+            isIcon: true,
+          ),
         ],
       ),
     );
+  }
+
+  //==========================================logout dialog here=============>
+  void logoutDialog() {
+    Get.defaultDialog(
+        title: "Log Out",
+        content: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            InkWell(
+              onTap: () {
+                Get.offNamed(AppRoute.signinScreen);
+              },
+              child: Container(
+                height: 36,
+                width: 92,
+                decoration: BoxDecoration(
+                    color: Colors.black,
+                    borderRadius: BorderRadius.circular(5)),
+                child: const Center(
+                    child: Text(
+                  "Yes",
+                  style: TextStyle(color: Colors.white),
+                )),
+              ),
+            ),
+            InkWell(
+              onTap: () {
+                Get.back();
+              },
+              child: Container(
+                height: 36,
+                width: 92,
+                decoration: BoxDecoration(
+                    color: Colors.black,
+                    borderRadius: BorderRadius.circular(5)),
+                child: const Center(
+                  child: Text(
+                    "No",
+                    style: TextStyle(color: Colors.white),
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ));
   }
 }
